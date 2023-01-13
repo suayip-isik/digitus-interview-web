@@ -18,13 +18,14 @@ export default {
         paddingLeft: 20,
     },
     menuBarContainer: {
-        flex: 2,
+        flex: 1.5,
         backgroundColor: 'white',
         display: 'flex',
     },
     rightContainer: {
         flex: 1,
-        minHeight: 30,
-        backgroundColor: 'black',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'flex-end'
     }
 }
