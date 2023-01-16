@@ -8,21 +8,23 @@ import { BsDot } from 'react-icons/bs';
 import { RxAvatar } from 'react-icons/rx';
 
 
-export default function PostComponent({ image, imageAlt, name, title, likeNumber, shareNumber, minNumber, viewNumber, commentNumber, description, tags }) {
+export default function PostComponent({ image, imageAlt, name, title, likeNumber, shareNumber, minNumber, viewNumber, commentNumber, description, tags, isSponsor }) {
     return (
         <div style={styles.container}>
 
-            <div style={styles.headerContainer}>
+            <div style={Object.assign(isSponsor ? { backgroundImage: "linear-gradient(to right, #E5D2EE, #D2E8EE)" } : {}, styles.headerContainer)}>
                 <RxAvatar size={35} />
                 <div style={styles.headerCenterContainer}>
                     <label style={styles.headerName}>{name}</label>
-                    <label style={styles.headerTitle}>{title}</label>
+                    <label style={Object.assign(isSponsor ? { color: 'red' } : { color: 'rgb(255, 191, 0)', }, styles.headerTitle)}>{title}</label>
                 </div>
                 <BsThreeDots size={30} color={'black'} />
             </div>
 
             <div>
-                <img style={{ width: '100%' }} src={image} alt={imageAlt} />
+                {
+                    image && <img style={{ width: '100%' }} src={image} alt={imageAlt} />
+                }
             </div>
 
             <div style={styles.bottomContainer}>

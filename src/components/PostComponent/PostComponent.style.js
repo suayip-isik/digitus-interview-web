@@ -20,8 +20,8 @@ const styles = {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'flex-start',
-        backgroundColor: 'white',
         flex: 1,
+        backgroundColor: 'transparent',
     },
     headerName: {
         fontWeight: 'bold',
@@ -29,11 +29,9 @@ const styles = {
     },
     headerTitle: {
         fontWeight: 'bold',
-        color: 'rgb(255, 191, 0)',
     },
     bottomContainer: {
         backgroundColor: 'white',
-        marginBottom: 200,
         borderBottomRightRadius: 10,
         borderBottomLeftRadius: 10,
     },

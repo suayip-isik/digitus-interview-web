@@ -46,7 +46,35 @@ export default function Body({ className }) {
                     viewNumber={6}
                     commentNumber={4}
                     description={'Lorem Ipsum, kısaca Lipsum, masaüstü yayıncılık ve basın yayın sektöründe kullanılan taklit yazı bloğu olarak tanımlanır...'}
-                    tags={['child','doctor','hospital','ever']}
+                    tags={['child', 'doctor', 'hospital', 'ever']}
+                />
+
+
+                <PostComponent
+                    name={'Şuayip Işık'}
+                    title={'Mobile Application Developer'}
+                    imageAlt={'post_photo'}
+                    likeNumber={5}
+                    shareNumber={8}
+                    minNumber={7}
+                    viewNumber={6}
+                    commentNumber={4}
+                    description={'Lorem Ipsum, kısaca Lipsum, masaüstü yayıncılık ve basın yayın sektöründe kullanılan taklit yazı bloğu olarak tanımlanır...'}
+                    tags={['child', 'doctor', 'hospital', 'ever']}
+                />
+
+                <PostComponent
+                    isSponsor={true}
+                    name={'Mulipa'}
+                    title={'SPONSPRED'}
+                    imageAlt={'post_photo'}
+                    likeNumber={5}
+                    shareNumber={8}
+                    minNumber={7}
+                    viewNumber={6}
+                    commentNumber={4}
+                    description={'Lorem Ipsum, kısaca Lipsum, masaüstü yayıncılık ve basın yayın sektöründe kullanılan taklit yazı bloğu olarak tanımlanır...'}
+                    tags={['child', 'doctor', 'hospital', 'ever']}
                 />
 
             </div>
