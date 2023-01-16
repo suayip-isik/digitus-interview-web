@@ -15,7 +15,7 @@ export default function Body({ className }) {
 
 
             {/* Body Center View */}
-            <div style={{ flex: 1.5, paddingTop: 20, marginLeft: '1%', marginRight: '1%' }}>
+            <div style={{ flex: 1.5, paddingTop: 20, marginLeft: '1%', marginRight: '1%', paddingBottom: 500 }}>
 
                 {/* New Post Component */}
                 <div style={{ borderRadius: 10, backgroundColor: 'white', marginBottom: 30, paddingLeft: 10, paddingRight: 10, }}>
@@ -67,6 +67,7 @@ export default function Body({ className }) {
                     isSponsor={true}
                     name={'Mulipa'}
                     title={'SPONSPRED'}
+                    image={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNT6aw4mAopUHwphUm0K7owB2fErbqEnRZ3d-gpgg6Kh1xXvRTcYYb7rWVYRX8rTKUbKw&usqp=CAU'}
                     imageAlt={'post_photo'}
                     likeNumber={5}
                     shareNumber={8}

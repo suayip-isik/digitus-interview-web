@@ -21,7 +21,7 @@ export default function PostComponent({ image, imageAlt, name, title, likeNumber
                 <BsThreeDots size={30} color={'black'} />
             </div>
 
-            <div>
+            <div style={{ display: 'flex', flexDirection: 'row' }}>
                 {
                     image && <img style={{ width: '100%' }} src={image} alt={imageAlt} />
                 }
